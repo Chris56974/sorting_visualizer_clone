@@ -1,4 +1,4 @@
-export const canvasInit = (e: Event) => {
+export const canvasInit = () => {
   
   const canvas = <HTMLCanvasElement>document.getElementById('canvas')
   const ctx = canvas.getContext('2d');

@@ -1,5 +1,5 @@
 import './styles/index.scss';
-import {canvasInit} from './canvas'
+import { canvasInit } from './canvas'
 
 const reset = document.querySelector('#reset')
 const merge = document.querySelector('#merge')
@@ -8,4 +8,4 @@ const heap = document.querySelector('#heap')
 const bubble = document.querySelector('#bubble')
 const insertion = document.querySelector('#insertion')
 
-// window.addEventListener('load', canvasInit());
+canvasInit() 
