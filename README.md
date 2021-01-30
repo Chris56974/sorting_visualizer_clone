@@ -18,4 +18,12 @@ The time & space complexity of sort() depends on which browser you're using.
   - Time  -> O(n log n) :: (worst case of O(n^2))
   - Space -> O(n log n)
 
-If you don't provide any arguments to the array.sort() method, it will convert each array-item into its string equivalent and then make comparisons using its UTF-16 value. Providing two arguments (the first element and the second element of the array) will cause the array.sort() method to sort using the return value of each comparison. If it's below 0, a will be sorted before b. If it's above 0, a will be sorted after b. 
+If you don't provide any arguments to the array.sort() method, it will convert each array-item into its string equivalent and then make comparisons using its UTF-16 value. Providing two arguments (the first element and the second element of the array) will cause the array.sort() method to sort using the return value of each comparison. If it's below 0, a will be sorted before b. If it's above 0, a will be sorted after b.
+
+### Bubble Sort
+
+This algorithm has a time complexity of O(n^2). A single loop is only guaranteed to have the last element in the right place. Two loops will guarantee that the last two items are in the right place. Therefore, you need n loops to make sure all subsequent items are in the right place.
+
+#### Sources
+
+[Why bubble sort needs two loops?](https://stackoverflow.com/questions/12259622)
