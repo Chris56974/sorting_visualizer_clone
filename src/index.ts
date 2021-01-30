@@ -1,6 +1,6 @@
 import './styles/index.scss';
 import { canvasInit } from './canvas'
-import { randomizeArray } from './algorithms/randomizeArray';
+import { randomizeArray } from './helpers/randomizeArray';
 import { bubbleSort } from './algorithms/bubbleSort';
 
 const LOWER_BOUND = 1
@@ -12,6 +12,7 @@ const quick = document.querySelector('#quick')
 const heap = document.querySelector('#heap')
 const bubble = document.querySelector('#bubble')
 const insertion = document.querySelector('#insertion')
+const selection = document.querySelector('#selection')
 
 const array: number[] = []; 
 randomizeArray(array, LOWER_BOUND, UPPER_BOUND) 

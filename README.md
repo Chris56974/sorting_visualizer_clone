@@ -2,7 +2,7 @@
 
 This project is a clone of [Clement Mihailescu's Sorting Visualizer](https://github.com/clementmihailescu/Sorting-Visualizer).
 
-My implementation uses the CanvasAPI and CSS Grid, all bundled together with my [Webpack5 Template](https://github.com/Chris56974/Webpack5-TS-Template).
+My implementation uses the CanvasAPI for animations, CSS Grid for responsiveness, Jest for algorithms, and [Webpack](https://github.com/Chris56974/Webpack5-TS-Template) for bundling my application.
 
 ## Takeaways
 
@@ -22,7 +22,12 @@ If you don't provide any arguments to the array.sort() method, it will convert e
 
 ### Bubble Sort
 
-This algorithm has a time complexity of O(n^2). A single loop is only guaranteed to have the last element in the right place. Two loops will guarantee that the last two items are in the right place. Therefore, you need n loops to make sure all subsequent items are in the right place.
+It compares the first two items in the array and pushes the bigger one ahead of the smaller one. It then repeats the process with the next item in the array, and so on... The problem is, one loop will only push the biggest item to the end of the array and two loops will only push the two biggest items to the end. Therefore, you need n loops to make sure every item is properly sorted which is why this algorithm has a time complexity of O(n^2).
+
+### Selection Sort
+
+It loops through the entire array and places the smallest item to the beginning of the array, it then loops again until the array is sorted. Since this algorithm also requires n loops, it also have a time complexity of O(n^2)
+
 
 #### Sources
 

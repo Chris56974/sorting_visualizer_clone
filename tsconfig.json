@@ -59,7 +59,7 @@
     "skipLibCheck": true, /* Skip type checking of declaration files. */
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
   },
-  "include": [ "src/*" ], // TS is neurotic about checking node_modules, hopefully I won't need this in the future
+  "include": [ "src/*", "src/helpers/randomizeArray.ts" ], // TS is neurotic about checking node_modules, hopefully I won't need this in the future
   "exclude": [
     "node_modules",
     "./node_modules",
