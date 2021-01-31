@@ -22,12 +22,15 @@ If you don't provide any arguments to the array.sort() method, it will convert e
 
 ### Bubble Sort
 
-It compares the first two items in the array and pushes the bigger one ahead of the smaller one. It then repeats the process with the next item in the array, and so on... The problem is, one loop will only push the biggest item to the end of the array and two loops will only push the two biggest items to the end. Therefore, you need n loops to make sure every item is properly sorted which is why this algorithm has a time complexity of O(n^2).
+It compares the first two items in the array and pushes the bigger one ahead of the smaller one. It then repeats the process with the next item in the array, and so on... The problem is, one loop will only guarantee the biggest item is at the end of the array. Two loops will have the two biggest items to the end, and so on. Therefore, you need n loops to make sure every subsequent item is properly sorted which is why this algorithm has a time complexity of O(n^2). It's space complexity is O(1) because the algorithm requires a temporary variable to be saved in memory. You can get O(n) time complexity if the array is already sorted, but I didn't program for this (maybe later). The idea here is, if the bubble sort doesn't bubble anything up, then you don't have to loop through it again.
 
 ### Selection Sort
 
-It loops through the entire array and places the smallest item to the beginning of the array, it then loops again until the array is sorted. Since this algorithm also requires n loops, it also have a time complexity of O(n^2)
+It loops through the entire array and places the smallest item at the beginning, it repeats this process until the array is sorted. This algorithm also requires n loops, and it also requires a temporary variable giving it the same space & time complexity as bubble sort.
 
+### Insertion Sort
+
+It picks an item, and then places it where it belongs relative to the items it's already sorted. This algorithm also requires two loops, because once it picks an item it has to loop through all the items it's already been through. The time complexity is O(n^2) but if the array is already almost sorted you can get something like O(n).
 
 #### Sources
 

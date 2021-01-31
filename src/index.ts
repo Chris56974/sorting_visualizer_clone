@@ -8,6 +8,10 @@ import { insertionSort } from './algorithms/insertionSort';
 const LOWER_BOUND = 1
 const UPPER_BOUND = 50
 
+const array: number[] = []; 
+randomizeArray(array, LOWER_BOUND, UPPER_BOUND) 
+canvasInit() 
+
 const reset = document.querySelector('#reset')
 const heap = document.querySelector('#heap')
 const merge = document.querySelector('#merge')
@@ -15,11 +19,6 @@ const quick = document.querySelector('#quick')
 const bubble = document.querySelector('#bubble')
 const selection = document.querySelector('#selection')
 const insertion = document.querySelector('#insertion')
-
-const array: number[] = []; 
-randomizeArray(array, LOWER_BOUND, UPPER_BOUND) 
-
-canvasInit() 
 
 reset?.addEventListener('click', () => {
   randomizeArray(array, LOWER_BOUND, UPPER_BOUND)
