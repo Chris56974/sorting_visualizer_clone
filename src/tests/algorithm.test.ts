@@ -1,5 +1,6 @@
 const { bubbleSort } = require('../algorithms/bubbleSort')
 const { selectionSort } = require('../algorithms/selectionSort')
+const { insertionSort } = require('../algorithms/insertionSort')
 
 test('It sorts the array', () => {
   const unsorted = [7, 6, 1, 8, 10]
@@ -7,5 +8,6 @@ test('It sorts the array', () => {
 
   expect(bubbleSort(unsorted)).toEqual(sorted)
   expect(selectionSort(unsorted)).toEqual(sorted)
+  expect(insertionSort(unsorted)).toEqual(sorted)
 
 })
